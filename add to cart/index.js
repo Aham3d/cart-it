@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
   databaseURL: "https://playground-a64cc-default-rtdb.asia-southeast1.firebasedatabase.app/"
@@ -31,11 +31,11 @@ onValue(shoppingListInDB, function(snapshot) {
   clearShoppingList();
 
   for(let i = 0; i < itemsArray.length; i++) {
-    let currentItem = itemsArray[i]; 
+    let currentItem = itemsArray[i];
     let currentItemID = currentItem[0]; 
     let currenItemsValue = currentItem[1];
 
-    appenditem(currentItem); 
+    appenditem(currentItem);
   }
 })
 
@@ -50,12 +50,18 @@ function clearInputField() {
 
 function appenditem(item) { 
 
-  let itemID = item[0]; 
+  let itemID = item[0];
   let itemValue = item[1];
 
   let newEl = document.createElement('li'); 
 
   newEl.textContent = itemValue;
+
+  newEl.addEventListener('click', function() {
+    let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`);
+
+    remove(exactLocationOfItemInDB);
+  })
 
   shoppingList.append(newEl);
 }
