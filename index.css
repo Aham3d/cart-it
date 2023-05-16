@@ -50,7 +50,6 @@ button:hover {
 }
  
 img {
-  /* border-radius: 50%; */
   width: 9rem;
 }
 
@@ -60,6 +59,7 @@ ul {
   gap: 0.8rem;
   padding: 0;
   list-style-type: none;
+
 }
 
 ul li {
@@ -74,6 +74,5 @@ ul li {
 }
 
 li:hover {
-  background-color: #e1e1b9;
-  opacity: 80%;
+  background-color: #ececb4;
 }
