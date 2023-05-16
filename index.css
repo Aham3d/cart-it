@@ -76,3 +76,9 @@ ul li {
 li:hover {
   background-color: #ececb4;
 }
+
+@media screen and (max-width: 320px) {
+  html {
+    padding: 0;
+  }
+}
