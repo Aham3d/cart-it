@@ -75,10 +75,13 @@ ul li {
 
 li:hover {
   background-color: #ececb4;
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 320px) {
   html {
     padding: 0;
   }
+=======
+>>>>>>> f60b7e19c37ec68bb1d3fedc6e529eeafd952186
 }
