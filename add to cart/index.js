@@ -35,7 +35,7 @@ onValue(shoppingListInDB, function(snapshot) {
     let currentItemID = currentItem[0]; 
     let currenItemsValue = currentItem[1];
 
-    appenditem(currentItem);
+    appenditem(currentItem); 
   }
 })
 
@@ -55,7 +55,7 @@ function appenditem(item) {
 
   let newEl = document.createElement('li'); 
 
-  newEl.textContent = itemID;
+  newEl.textContent = itemValue;
 
   shoppingList.append(newEl);
 }
