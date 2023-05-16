@@ -28,7 +28,7 @@ onValue(shoppingListInDB, function(snapshot) {
   if(snapshot.exists()) {
     let itemsArray = Object.entries(snapshot.val());
 
-    console.log(snapshot.val());
+    // console.log(snapshot.val());
   
     clearShoppingList();
   
