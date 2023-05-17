@@ -2,15 +2,16 @@ html, body {
   margin: 0;
   padding: 3rem 0;
   font-family: sans-serif;
-  background-color: #f1f1de;
+  background-color: #fdfdec;
   justify-content: center;
   display: flex;
   font-size: 1rem;
   user-select: none;
+  font-family: Ubuntu;
 }
 
 input {
-  background-color: #e1e1b9;
+  background-color: #ededc9;
   text-align: center;
   padding: 0.8rem 0;
   width: 100%;
@@ -20,13 +21,13 @@ input {
 }
 
 input::placeholder {
-  color: #656559;
+  color: #9a9a80;
 
 }
 
 button {
   color: #ffffff;
-  background-color: #656559;
+  background-color: #9a9a80;
   padding: 0.8rem 0;
   width: 250px;
   border: none;
@@ -37,7 +38,7 @@ button {
 }
 
 button:hover {
-  background-color: #4f4f42;
+  background-color: #707062;
 }
 
 .container {
@@ -63,8 +64,8 @@ ul {
 }
 
 ul li {
-  color: #656559;
-  background-color: #e1e1b9;
+  color: #707062;
+  background-color: #ededc9;
   box-shadow: 0px 1px 4px rgba(0, 0,0,0.2);
   padding: 0.8rem;
   flex-grow: 1;
@@ -74,14 +75,11 @@ ul li {
 }
 
 li:hover {
-  background-color: #ececb4;
-<<<<<<< HEAD
+  background-color: #ffffbb;
 }
 
 @media screen and (max-width: 320px) {
   html {
     padding: 0;
   }
-=======
->>>>>>> f60b7e19c37ec68bb1d3fedc6e529eeafd952186
 }
